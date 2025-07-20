@@ -1,0 +1,5 @@
+vault write my-first-database/roles/readonly \
+      db_name=postgres \
+      creation_statements=@readonly1.sql \
+      default_ttl=1h \
+      max_ttl=24h

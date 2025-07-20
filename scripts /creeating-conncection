@@ -1,0 +1,7 @@
+vault write my-first-database/config/postgres \
+    plugin_name=postgresql-database-plugin \
+    connection_url="postgresql://{{username}}:{{password}}@database-1.c5u2s8k2qjoo.ap-south-1.rds.amazonaws.com/postgres?sslmode=require" \
+    allowed_roles=readonly \
+    username="kiran" \
+    password="kirannaikbukke"
+
